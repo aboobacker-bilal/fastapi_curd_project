@@ -28,22 +28,22 @@ MongoDB is used as the database, and FastAPI is the framework for building the A
 
 ## Endpoints
 A. Items API
-* POST /items
+#### 1. POST /items
 * Create a new item.
 * Input: name, email, item_name, quantity, expiry_date (YYYY-MM-DD)
-* GET /items/{id}
+#### 2. GET /items/{id}
 * Retrieve an item by its ID.
-* GET /items/filter
+#### 3. GET /items/filter
 * Filter items based on the following criteria:
 * email (exact match)
 * expiry_date (expiring after the provided date)
 * insert_date (inserted after the provided date)
 * quantity (greater than or equal to the provided number)
-* GET /items/aggregate
+#### 4. GET /items/aggregate
 * Aggregate items by email and return the count of items per email.
-* DELETE /items/{id}
+#### 5. DELETE /items/{id}
 * Delete an item by its ID.
-* PUT /items/{id}
+#### 6. PUT /items/{id}
 * Update an item by its ID (excluding the insert date).
 
 ## B. Clock-In Records API
