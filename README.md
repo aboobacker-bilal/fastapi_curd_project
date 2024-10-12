@@ -28,38 +28,39 @@ MongoDB is used as the database, and FastAPI is the framework for building the A
 
 ## Endpoints
 A. Items API
-### 1. POST /items
+#### 1. POST /items
 
 Create a new item.
 Input: name, email, item_name, quantity, expiry_date (YYYY-MM-DD)
-### 2. GET /items/{id}
+#### 2. GET /items/{id}
 Retrieve an item by its ID.
-### 3. GET /items/filter
+#### 3. GET /items/filter
 Filter items based on the following criteria:
 email (exact match)
 expiry_date (expiring after the provided date)
 insert_date (inserted after the provided date)
 quantity (greater than or equal to the provided number)
-### 4. GET /items/aggregate
+#### 4. GET /items/aggregate
 Aggregate items by email and return the count of items per email.
-### 5. DELETE /items/{id}
+#### 5. DELETE /items/{id}
 Delete an item by its ID.
-### 6. PUT /items/{id}
+#### 6. PUT /items/{id}
 
 Update an item by its ID (excluding the insert date).
 ## B. Clock-In Records API
-### 1. POST /clock-in
+#### 1. POST /clock-in
 Create a new clock-in record.
 Input: email, location
-### 2. GET /clock-in/{id}
+#### 2. GET /clock-in/{id}
 Retrieve a clock-in record by its ID.
-### 3. GET /clock-in/filter
+#### 3. GET /clock-in/filter
 Filter clock-in records based on:
 email (exact match)
 location (exact match)
 insert_datetime (clock-ins after the provided date)
-### 4. DELETE /clock-in/{id}
+#### 4. DELETE /clock-in/{id}
 Delete a clock-in record by its ID.
-### 5. PUT /clock-in/{id}
+#### 5. PUT /clock-in/{id}
 
-Update a clock-in record by its ID (excluding the insert date).
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
