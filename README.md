@@ -47,19 +47,19 @@ A. Items API
 * Update an item by its ID (excluding the insert date).
 
 ## B. Clock-In Records API
-**1. POST /clock-in**
+#### 1. POST /clock-in
 * Create a new clock-in record.
 * Input: email, location
-**2. GET /clock-in/{id}**
+#### 2. GET /clock-in/{id}
 * Retrieve a clock-in record by its ID.
-**3. GET /clock-in/filter**
+#### 3. GET /clock-in/filter
 * Filter clock-in records based on:
 * email (exact match)
 * location (exact match)
 * insert_datetime (clock-ins after the provided date)
-**4. DELETE /clock-in/{id}**
+#### 4. DELETE /clock-in/{id}
 * Delete a clock-in record by its ID.
-**5. PUT /clock-in/{id}**
+#### 5. PUT /clock-in/{id}
 * Update a clock-in record by its ID (excluding the insert date).
 
 ## License
