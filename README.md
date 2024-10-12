@@ -26,6 +26,34 @@ MongoDB is used as the database, and FastAPI is the framework for building the A
 * MongoDB instance (Atlas or local)
 * Virtual environment
 
+## Steps to run the project locally
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/aboobacker-bilal/fastapi_curd_project.git
+    cd your-repo
+    ```
+2. **Set up a virtual environment:**
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+3. **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. **Set up MongoDB:**
+    - If using MongoDB Atlas, create a free cluster and obtain your connection string.
+    - If using a local MongoDB instance, ensure MongoDB is installed and running.
+5. **Configure environment variables:**
+    - Create a `.env` file in the project root and add your MongoDB URI:
+    ```bash
+    MONGO_URI="your_mongo_connection_string"
+    ```
+### Running the Application
+1. **Start the FastAPI application:**
+    ```bash
+    uvicorn main:app --reload
+    ```
 ## Endpoints
 ### A. Items API
 ##### 1. POST /items
