@@ -1,11 +1,11 @@
 # FastAPI MongoDB Project - Items and User Clock-In Records API
 
 ## Table of Contents
-*Project Overview
-*Features
-*Tech Stack
-*Setup and Installation
-*Endpoints
+* Project Overview
+* Features
+* Tech Stack
+* Setup and Installation
+* Endpoints
 
 ## Project Overview
 This project implements two main APIs:
@@ -15,16 +15,16 @@ This project implements two main APIs:
 MongoDB is used as the database, and FastAPI is the framework for building the API. It supports typical CRUD operations and advanced filtering using MongoDB's aggregation framework.
 
 ## Features
-*CRUD operations for both items and user clock-in records.
-*MongoDB aggregation for item filtering and counting by email.
-*Filtering on expiry date, quantity, insert date, email, and clock-in location.
-*Automatically managed fields such as insert date and clock-in time.
+* CRUD operations for both items and user clock-in records.
+* MongoDB aggregation for item filtering and counting by email.
+* Filtering on expiry date, quantity, insert date, email, and clock-in location.
+* Automatically managed fields such as insert date and clock-in time.
 
 ## Setup and Installation
 ### Prerequisites
-*Python 3.8+
-*MongoDB instance (Atlas or local)
-*Virtual environment
+* Python 3.8+
+* MongoDB instance (Atlas or local)
+* Virtual environment
 
 ## Endpoints
 A. Items API
